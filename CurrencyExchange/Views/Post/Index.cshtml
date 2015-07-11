@@ -1,0 +1,46 @@
+﻿@model IEnumerable<CurrencyExchange.Entities.Post>
+
+@{
+    ViewBag.Title = "View Request";
+}
+
+<h2>@ViewBag.Title</h2>
+<table class="table">
+    <tr>
+        <th>
+            Request ID
+        </th>
+        <th>
+            Currency From
+        </th>
+        <th>
+            Currency To
+        </th>
+        <th>
+            Amount
+        </th>
+        <th>
+            Rate
+        </th>
+        <th>
+            Location
+        </th>
+        <th>
+            Request By
+        </th>
+    </tr>
+
+    @foreach (var m in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(item => m.Id)</td>
+            <td>@Html.DisplayFor(item => m.currencyFrom)</td>
+            <td>@Html.DisplayFor(item => m.currenyTo)</td>
+            <td>@Html.DisplayFor(item => m.Amount)</td>
+            <td>@Html.DisplayFor(item => m.Rate)</td>
+            <td>@Html.DisplayFor(item => m.Location)</td>
+            <td>@Html.DisplayFor(item => m.User.UserName)</td>
+        </tr>
+    }
+
+</table>
