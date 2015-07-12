@@ -199,7 +199,6 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\freelancer.css" />
-    <Content Include="Content\video.mp4" />
     <Content Include="favicon.ico" />
     <Content Include="font-awesome\css\font-awesome.css" />
     <Content Include="font-awesome\css\font-awesome.min.css" />
