@@ -6,6 +6,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: #f8f8f8;
 }
 
 p {
@@ -169,6 +170,10 @@ header .intro-text .skills {
         .navbar .navbar-nav li a:focus {
             outline: 0;
         }
+
+.navbar-default {
+    background-color: #38BAB0;
+}
 
 .navbar-default,
 .navbar-inverse {
@@ -461,4 +466,22 @@ footer {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+.logo {
+    height: 100%;
+    min-width: 100px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+    .logo img {
+        z-index: 1;
+        width: 120px;
+        position: relative;
+    }
+
+
+.navbar-default .navbar-nav > li > a {
+      color: #FFF;
 }

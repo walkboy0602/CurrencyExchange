@@ -25,7 +25,7 @@ namespace CurrencyExchange
 
             // Font Awesome icons style
             bundles.Add(new StyleBundle("~/bundles/font-awesome/css").Include(
-                      "~/Vendor/fontawesome/css/font-awesome.min.css", new CssRewriteUrlTransform()));
+                      "~/font-awesome/css/font-awesome.min.css", new CssRewriteUrlTransform()));
 
             bundles.Add(new ScriptBundle("~/bundles/vendor").Include(
                       "~/Scripts/cbpAnimatedHeader.min.js",
@@ -39,7 +39,7 @@ namespace CurrencyExchange
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
-            BundleTable.EnableOptimizations = true;
+            BundleTable.EnableOptimizations = false;
         }
     }
 }

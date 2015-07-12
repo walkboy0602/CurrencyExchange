@@ -58,7 +58,8 @@ namespace CurrencyExchange.Controllers
                     post.UserId = User.Identity.GetUserId();
                     db.Post.Add(post);
                     db.SaveChanges();
-                    return RedirectToAction("Index");
+                    //TempData["Message"] = "Thank you. Your request has been received.";
+                    return RedirectToAction("Complete");
                 }
             }
             catch
@@ -67,6 +68,11 @@ namespace CurrencyExchange.Controllers
             }
 
             return View(model);
+        }
+
+        public ActionResult Complete()
+        {
+            return View();
         }
 
         private List<SelectListItem> GetCurrencyList()
